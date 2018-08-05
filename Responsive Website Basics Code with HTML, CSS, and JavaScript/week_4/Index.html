@@ -1,0 +1,23 @@
+<head>
+	<title> JavaScript Showcase </title>
+	<script type="text/javascript" src="jquery-3.3.1.js"></script>
+</head>
+
+<body >
+	<h1 id="Title" onclick="change_text()">
+		Hello
+	</h1>
+	<p id="Content">
+	</p>
+	<script type="text/javascript">
+		$('#Content').html('Content loaded using JavaScript') 
+
+		function change_text() {
+			$('#Title').html('Goodbye from JavaScript function');
+			$('#Title').click(function() {
+				$('#Title').html('Hello from JavaScript');
+				$('#Title').off('click');
+			});
+		}
+	</script>
+</body>

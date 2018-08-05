@@ -1,0 +1,15 @@
+/* put borders around the columns*/
+.columns {
+	border: 1px solid;
+	border-color:blue;
+}
+
+.title {
+	text-align: center;
+	color: red;
+}
+
+#logo {
+	display: block;
+	margin: 0 auto;
+}
